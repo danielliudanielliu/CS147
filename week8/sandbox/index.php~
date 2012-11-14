@@ -1,7 +1,7 @@
 <?php
 include 'Mobile_Detect.php';
 $detect = new Mobile_Detect();
-if (!$detect->isMobile()) {
+if ($detect->isMobile()) {
 	// Any mobile device.
 	header("location: mobiletest/iphone.php?url=stanford.edu/rakasaka/cs147/week8/sandbox/mobile.php");
 }
